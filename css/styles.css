@@ -181,6 +181,10 @@ ul {
     color: white;
 }
 
+.modern-header nav a.active [data-lucide] {
+    color: white;
+}
+
 /* Mobile menu toggle button */
 .mobile-menu-toggle {
     display: none;
@@ -408,6 +412,8 @@ footer p {
     padding: 3rem 0;
     margin: 2rem 0;
     text-align: center;
+    background: linear-gradient(to right, rgba(201, 242, 199, 0.05), rgba(201, 242, 199, 0.3) 20%, rgba(201, 242, 199, 0.3) 80%, rgba(201, 242, 199, 0.05) 100%);
+    border-radius: 8px;
 }
 
 .central-quote-container::before,
