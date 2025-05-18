@@ -290,7 +290,7 @@ function setupContactButtons() {
     
     if (whatsappButton) {
         // Add predefined message to WhatsApp button
-        const predefinedMessage = "Hola! Vimos tu propiedad y queríamos compartirte nuestro perfil 😊";
+        const predefinedMessage = "Hola Caro y Fran! Vimos su perfil y tenemos algo para ustedes 😊";
         const phoneNumber = whatsappButton.getAttribute('href').replace('https://wa.me/', '');
         
         // Update WhatsApp link with encoded message
