@@ -3,145 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caro y Fran</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2370AE6E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'%3E%3C/path%3E%3Cpolyline points='9 22 9 12 15 12 15 22'%3E%3C/polyline%3E%3C/svg%3E" type="image/svg+xml">
+    <title>Caro y Fran | Búsqueda de alquiler en Galicia</title>
+    <meta
+        name="description"
+        content="Caro y Fran buscan alquiler en Galicia, idealmente en Oleiros o A Coruña. Mudanza por trabajo en Inditex, perfil profesional sólido y Percy como parte de la familia."
+    >
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%235D7C73' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'%3E%3C/path%3E%3Cpolyline points='9 22 9 12 15 12 15 22'%3E%3C/polyline%3E%3C/svg%3E" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <meta name="description" content="Caro y Fran - En búsqueda de nuestro nuevo hogar">
 </head>
 <body>
-    <header class="modern-header">
-        <div class="logo">
-            <a href="#inicio">
-                <div class="logo-circle">
-                    <span>C&F</span>
-                </div>
-                <div class="logo-text">Caro y Fran</div>
-            </a>
-        </div>
-        <nav>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 64 64" focusable="false" aria-hidden="true">
+                    <circle class="brand-mark-ring" cx="32" cy="32" r="23"></circle>
+                    <path
+                        class="brand-mark-orbit"
+                        d="M17 24.5c4.4-6.6 11.9-10.5 20.3-10.5 8.9 0 16.6 4.5 20.9 11.4"
+                    ></path>
+                    <path
+                        class="brand-mark-plane"
+                        d="M52 26.3l-5.2-.8 1.8 4.9"
+                    ></path>
+                    <path
+                        class="brand-mark-stroke"
+                        d="M20 31.5 32 21l12 10.5"
+                    ></path>
+                    <path
+                        class="brand-mark-stroke"
+                        d="M24 29.5V45h16V29.5"
+                    ></path>
+                    <path
+                        class="brand-mark-stroke"
+                        d="M30 45v-8h4v8"
+                    ></path>
+                </svg>
+            </span>
+            <span class="brand-text">
+                <strong>Caro y Fran</strong>
+                <small>Italia · Galicia</small>
+            </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Navegación principal">
             <ul>
-                <li><a href="#inicio"><i data-lucide="home"></i> <span>Inicio</span></a></li>
-                <li><a href="#sobre-nosotros"><i data-lucide="user"></i> <span>Sobre Nosotros</span></a></li>
-                <li><a href="#nuestra-busqueda"><i data-lucide="search-check"></i> <span>Búsqueda</span></a></li>
-                <li><a href="#referencias"><i data-lucide="briefcase"></i> <span>Referencias</span></a></li>
-                <li><a href="#percy"><i data-lucide="dog"></i> <span>Percy</span></a></li>
-                <li><a href="#contacto"><i data-lucide="mail"></i> <span>Contacto</span></a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#motivo">Mudanza</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#busqueda">Búsqueda</a></li>
+                <li><a href="#percy">Percy</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <button class="mobile-menu-toggle">
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
             <i data-lucide="menu"></i>
         </button>
     </header>
 
     <main>
-        <section id="inicio" class="hero-image">
-            <div class="hero-text">
-                <h2>Estamos buscando más que un alquiler</h2>
-                <p>Buscando un hogar... y estamos convencidos que vos podés ser parte de esta historia</p>
+        <section id="inicio" class="hero section-reveal">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Alquiler en Galicia</p>
+                    <h1
+                        class="hero-title"
+                        data-typewriter="Nos mudamos a Galicia."
+                        aria-label="Nos mudamos a Galicia."
+                    ></h1>
+
+                    <p class="hero-kicker">
+                        Buscamos una vivienda en Oleiros o A Coruña para instalarnos con estabilidad y empezar esta etapa con una base sólida.
+                    </p>
+                    <p class="hero-text">
+                        Actualmente vivimos en Sicilia, Italia, y nos estamos relocalizando por una oportunidad profesional y académica real. Queremos un hogar tranquilo, bien conectado y con luz natural.
+                    </p>
+
+                    <div class="hero-strip">
+                        <div class="hero-strip-item">
+                            <span class="hero-strip-label">Motivo</span>
+                            <strong>Trabajo en Inditex</strong>
+                        </div>
+                        <div class="hero-strip-item">
+                            <span class="hero-strip-label">Perfil</span>
+                            <strong>IT + fisioterapia</strong>
+                        </div>
+                        <div class="hero-strip-item">
+                            <span class="hero-strip-label">Base actual</span>
+                            <strong>Sicilia, Italia</strong>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary button-whatsapp" href="https://wa.me/393297486225">Contactar por WhatsApp</a>
+                        <a class="button button-secondary" href="#perfil">Conocer nuestro perfil</a>
+                    </div>
+
+                    <div class="hero-note">
+                        <i data-lucide="sparkles"></i>
+                        <p>Buscamos una relación de alquiler clara, respetuosa y de largo plazo.</p>
+                    </div>
+                </div>
+
+                <aside class="hero-card">
+                    <div class="hero-image-frame">
+                        <img src="img/hero.jpg" alt="Caro y Fran buscando un hogar en Galicia">
+                        <div class="hero-badge">
+                            <span>Buscamos</span>
+                            <strong>Galicia, Oleiros y A Coruña</strong>
+                        </div>
+                    </div>
+                    <div class="hero-card-content">
+                        <p class="card-kicker">Lo que nos importa</p>
+                        <div class="hero-facts">
+                            <span>
+                                <i data-lucide="map-pin"></i>
+                                Zona tranquila y bien conectada
+                            </span>
+                            <span>
+                                <i data-lucide="sun-medium"></i>
+                                Luz natural y espacio funcional
+                            </span>
+                            <span>
+                                <i data-lucide="calendar-check-2"></i>
+                                Alquiler serio y de largo plazo
+                            </span>
+                        </div>
+                        <ul class="check-list">
+                            <li>Prioridad en Oleiros y en la zona de A Coruña.</li>
+                            <li>Vida ordenada, estable y con compromiso real.</li>
+                            <li>Percy forma parte de la convivencia familiar.</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="proof-bar section-reveal" aria-label="Señales de confianza">
+                <div class="proof-item">
+                    <strong>1</strong>
+                    <span>Motivo claro: relocalización laboral y académica.</span>
+                </div>
+                <div class="proof-item">
+                    <strong>2</strong>
+                    <span>Búsqueda concreta: Galicia, especialmente Oleiros y A Coruña.</span>
+                </div>
+                <div class="proof-item">
+                    <strong>3</strong>
+                    <span>Vida ordenada, estabilidad económica y compromiso con el hogar.</span>
+                </div>
             </div>
         </section>
 
-        <section id="sobre-nosotros">
-            <h2><i data-lucide="user"></i> Sobre Nosotros</h2>
-            <div class="content-container">
-                <div class="text-content">
-                    <p>Somos <strong>Carolina y Franco</strong>, una pareja joven (31 años) que actualmente vive en Italia junto a nuestro perro Percy. Nos conocimos hace más de 10 años y desde entonces compartimos un camino de crecimiento, viajes, proyectos y muchas ganas de seguir construyendo juntos.</p>
-                    <p>Franco trabaja de manera remota como <strong>programador</strong> y Carolina es <strong>fisioterapeuta</strong>, con un gran interés en neurorehabilitación. A partir de septiembre nos estaremos mudando a España, donde Carolina comenzará una maestría para seguir formándose profesionalmente.</p>
-                    <p>Nos encanta la naturaleza, la vida tranquila cerca del mar, el deporte (especialmente el pádel y el fútbol), y compartir tiempo en familia —sí, Percy incluido. Buscamos un lugar donde podamos sentirnos en casa y seguir creciendo como equipo.</p>
+        <section id="motivo" class="content-section section-reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Por qué nos mudamos</p>
+                <h2>Una mudanza con propósito, no improvisada.</h2>
+            </div>
+            <div class="split-layout">
+                <div class="text-block">
+                    <p>
+                        Nuestro traslado a España forma parte de un proyecto de vida real y pensado. Fran recibió una oportunidad profesional en el área de IT de Inditex, y eso nos lleva a relocalizarnos a la ciudad con una base sólida de trabajo y continuidad.
+                    </p>
+                    <p>
+                        Carolina es fisioterapeuta, especializada en neurorehabilitación, y actualmente cursa un máster en España. Queremos instalar nuestra vida en un lugar que nos permita sostener ese crecimiento profesional sin perder la calma del día a día.
+                    </p>
+                    <p>
+                        Por eso buscamos una vivienda que no solo encaje con nuestras necesidades actuales, sino que también nos permita construir una relación seria y respetuosa con quien nos alquile.
+                    </p>
                 </div>
-                <!-- Aquí puedes agregar una foto de ustedes -->
-                <div class="image-container">
-                    <img src="img/nosotros.jpg" alt="Carolina y Franco">
+                <div class="feature-stack">
+                    <article class="feature-card">
+                        <i data-lucide="building-2"></i>
+                        <h3>Trabajo estable</h3>
+                        <p>La mudanza está vinculada a una oportunidad profesional concreta en Inditex.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i data-lucide="book-open"></i>
+                        <h3>Formación activa</h3>
+                        <p>Carolina continúa su desarrollo académico con un máster en España.</p>
+                    </article>
+                    <article class="feature-card">
+                        <i data-lucide="shield-check"></i>
+                        <h3>Perfil confiable</h3>
+                        <p>Somos cuidadosos, responsables y estamos listos para mostrar documentación y referencias.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <div class="central-quote-container">
-            <p class="central-quote">
-                "Para nosotros, mudarnos a España es parte de un proyecto de vida: seguir creciendo como profesionales en lo que nos apasiona, mientras encontramos un hogar donde vivir con calma, propósito y conexión."
-            </p>
-        </div>
-
-        <section id="nuestra-busqueda">
-            <h2><i data-lucide="search-check"></i> Nuestra Búsqueda</h2>
-            <div class="content-container">
-                <div class="text-content">
-                    <p>Con nuestra próxima mudanza a España en septiembre, estamos en búsqueda de un <strong>hogar acogedor</strong> donde podamos establecernos durante el período de estudios de Carolina. Buscamos un lugar:</p>
-                    <ul>
-                        <li><i data-lucide="map-pin"></i> Cercano a la universidad o con buena conectividad de transporte</li>
-                        <li><i data-lucide="shield"></i> En un vecindario tranquilo y seguro</li>
-                        <li><i data-lucide="dog"></i> Que acepte mascotas (nuestro perro Percy es parte de la familia)</li>
-                        <li><i data-lucide="home"></i> Preferiblemente con 2 dormitorios o un espacio adicional para oficina</li>
-                        <li><i data-lucide="sun"></i> Con buena luz natural y, si es posible, cerca de áreas verdes</li>
-                    </ul>
-                    <p>Como pareja responsable, ofrecemos estabilidad, cuidado del espacio y compromiso a largo plazo durante nuestra estancia.</p>
+        <section id="perfil" class="content-section section-reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Quiénes somos</p>
+                <h2>Dos perfiles, una mudanza seria y bien preparada.</h2>
+            </div>
+            <div class="profile-editorial">
+                <div class="profile-intro">
+                    <p>
+                        Hoy vivimos en Sicilia, Italia, y estamos dando este paso por motivos reales: trabajo, formación y proyecto de vida. No buscamos una solución temporal, sino una vivienda donde podamos instalarnos con calma y cumplir con total seriedad.
+                    </p>
+                    <div class="profile-signals" aria-label="Señales de perfil">
+                        <div class="profile-signal">
+                            <span>01</span>
+                            <div>
+                                <strong>Estabilidad laboral</strong>
+                                <p>La mudanza está ligada a una oportunidad profesional concreta en Inditex.</p>
+                            </div>
+                        </div>
+                        <div class="profile-signal">
+                            <span>02</span>
+                            <div>
+                                <strong>Planificación real</strong>
+                                <p>Vivimos una relocalización pensada, con fechas, bases y objetivos definidos.</p>
+                            </div>
+                        </div>
+                        <div class="profile-signal">
+                            <span>03</span>
+                            <div>
+                                <strong>Relación clara</strong>
+                                <p>Buscamos trato directo, ordenado y de largo plazo con la propiedad.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Aquí puedes agregar una imagen representativa -->
-                <div class="image-container">
-                    <img src="img/nuestra-busqueda.jpg" alt="Hogar ideal">
+
+                <div class="profile-story">
+                    <article class="profile-row">
+                        <p class="profile-label">Fran</p>
+                        <h3>Trabajo y adaptación</h3>
+                        <p>
+                            Profesional del área IT, con una oportunidad laboral concreta en Inditex. La mudanza está vinculada a continuidad profesional y a una organización estable desde el primer día.
+                        </p>
+                    </article>
+                    <article class="profile-row">
+                        <p class="profile-label">Carolina</p>
+                        <h3>Formación y continuidad</h3>
+                        <p>
+                            Fisioterapeuta especializada en neurorehabilitación, con experiencia en el área y actualmente cursando un máster en España. Esto refuerza una mudanza pensada y con recorrido.
+                        </p>
+                    </article>
+                    <article class="profile-row profile-row-last">
+                        <p class="profile-label">Como pareja</p>
+                        <h3>Orden, respeto y trato fácil</h3>
+                        <p>
+                            Compartimos más de una década de historia, hábitos de vida tranquilos y una convivencia muy cuidada. Valoramos la transparencia, el orden y una relación seria con quien nos alquile.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="referencias">
-            <h2><i data-lucide="briefcase"></i> Nuestra Solvencia y Referencias</h2>
-            <div class="content-container">
-                <div class="text-content">
-                    <p>Podemos ofrecer todas las garantías necesarias:</p>
-                    <ul>
-                        <li><i data-lucide="briefcase"></i> Franco trabaja de forma remota con contrato estable como programador</li>
-                        <li><i data-lucide="graduation-cap"></i> Carolina cuenta con experiencia y contratos previos, ademas de toda la documentación de estudios para su maestría en España</li>
-                        <li><i data-lucide="star"></i> Excelentes referencias de nuestros propietarios en Italia</li>
-                        <li><i data-lucide="banknote"></i> Capacidad comprobable para cumplir con pagos puntuales</li>
-                        <li><i data-lucide="file-text"></i> Disponibilidad para adelantar mensualidades si fuera necesario</li>
-                    </ul>
-                    <p>Entendemos la importancia de la confianza en esta relación, por lo que estamos dispuestos a proporcionar toda la documentación y referencias que necesiten para sentirse seguros con nosotros como inquilinos.</p>
+        <section id="busqueda" class="content-section section-reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Nuestra búsqueda</p>
+                <h2>Preferimos una vivienda que nos permita instalarnos bien desde el inicio.</h2>
+            </div>
+            <div class="split-layout">
+                <div class="text-block">
+                    <p>
+                        Estamos buscando alquiler en Galicia, con prioridad en Oleiros y en la zona de A Coruña. Nos interesan ubicaciones tranquilas, bien conectadas y que nos permitan llevar una vida ordenada desde nuestra base actual en Sicilia, Italia.
+                    </p>
+                    <div class="pill-grid" role="list" aria-label="Preferencias de vivienda">
+                        <span role="listitem">Zona tranquila</span>
+                        <span role="listitem">Buena conexión</span>
+                        <span role="listitem">Luz natural</span>
+                        <span role="listitem">Espacio para trabajar</span>
+                        <span role="listitem">Acepta mascotas</span>
+                        <span role="listitem">2 dormitorios o espacio extra</span>
+                    </div>
+                    <p>
+                        Nuestro objetivo es encontrar un lugar donde podamos quedarnos con estabilidad, cuidar el espacio y construir una relación de confianza con el propietario.
+                    </p>
                 </div>
-                <div class="image-container">
-                    <img src="img/solvencia.jpg" alt="Documentos y referencias">
+                <div class="image-card">
+                    <img src="img/nuestra-busqueda.jpg" alt="Espacio ideal para nuestra mudanza">
                 </div>
             </div>
         </section>
 
-        <section id="percy">
-            <h2><i data-lucide="dog"></i> Conocé a Percy 🐾</h2>
-            <div class="content-container">
-                <div class="text-content">
-                    <p>Percy es nuestro compañero canino, un perro sociable, cariñoso y bien educado. Está correctamente vacunado, tiene chip identificatorio y cuenta con todas las registraciones necesarias en cada lugar donde hemos vivido. Es un miembro fundamental de nuestra familia.</p>
-                    <p>Le encanta dar paseos, jugar, y es muy tranquilo en casa. Está acostumbrado a vivir en departamentos y respetar los espacios comunes. No ladra innecesariamente y se adapta con facilidad a nuevos entornos.</p>
-                    <p>Más allá de ser una mascota, Percy es un compañero esencial en nuestro día a día. Especialmente para Franco, que trabaja desde casa de forma remota, su presencia aporta compañía, bienestar y conexión con la rutina diaria.</p>
-                    <p>Encontrar un hogar donde Percy también sea bienvenido es clave para nosotros, porque es parte de nuestro equilibrio y nuestro equipo.</p>
-                </div>
-                <div class="image-container">
+        <section id="confianza" class="content-section section-reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Confianza y solvencia</p>
+                <h2>Queremos que la decisión de alquilarles sea sencilla.</h2>
+            </div>
+            <div class="trust-grid">
+                <article class="trust-card">
+                    <i data-lucide="file-text"></i>
+                    <h3>Documentación disponible</h3>
+                    <p>Podemos compartir la información necesaria para acreditar nuestra situación laboral y académica.</p>
+                </article>
+                <article class="trust-card">
+                    <i data-lucide="banknote"></i>
+                    <h3>Capacidad de pago</h3>
+                    <p>Contamos con base económica para cumplir con los pagos en tiempo y forma.</p>
+                </article>
+                <article class="trust-card">
+                    <i data-lucide="star"></i>
+                    <h3>Referencias previas</h3>
+                    <p>Tenemos referencias de propietarios anteriores y una convivencia sin problemas en Sicilia, Italia.</p>
+                </article>
+            </div>
+            <div class="quote-panel">
+                <p>
+                    Buscamos una relación de alquiler clara, respetuosa y de largo plazo, donde ambas partes se sientan cómodas y tranquilas.
+                </p>
+            </div>
+        </section>
+
+        <section id="percy" class="content-section section-reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Percy</p>
+                <h2>Parte de la familia, no un detalle secundario.</h2>
+            </div>
+            <div class="split-layout percy-layout">
+                <div class="image-card percy-image-card">
                     <img src="img/percy.jpg" alt="Percy, nuestro perro">
                 </div>
+                <div class="text-block">
+                    <p>
+                        Percy vive con nosotros como un miembro más de la familia. Es un perro cuidado, sociable y acostumbrado a convivir en interiores con rutina, paseo y respeto por el espacio.
+                    </p>
+                    <div class="percy-highlights" role="list" aria-label="Detalles sobre Percy">
+                        <span role="listitem">Vacunación y control veterinario al día</span>
+                        <span role="listitem">Acostumbrado a la vida en departamento</span>
+                        <span role="listitem">Rutina tranquila y convivencia ordenada</span>
+                    </div>
+                    <ul class="check-list">
+                        <li>Está vacunado y con control veterinario al día.</li>
+                        <li>Está acostumbrado a la vida en departamento.</li>
+                        <li>Nos acompaña con una convivencia tranquila y ordenada.</li>
+                    </ul>
+                    <p>
+                        Sabemos que tener un perro puede generar dudas. Por eso preferimos ser transparentes desde el inicio y mostrar que Percy forma parte de una convivencia responsable.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="contacto">
-            <h2><i data-lucide="mail"></i> Contacto</h2>
-            <p>Si tienes un lugar para alquilar o conoces alguna opción que podría interesarnos, ¡nos encantaría conversar contigo!</p>
+        <section id="contacto" class="content-section contact-section section-reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Contacto</p>
+                <h2>Si tu propiedad encaja con nuestro perfil, nos encantará hablar.</h2>
+            </div>
+            <p class="contact-copy">
+                Podemos enviar información adicional, documentación o referencias si lo necesitás. La idea es hacer el proceso simple, transparente y cómodo para ambas partes.
+            </p>
             <div class="contact-buttons">
-                <a href="https://wa.me/393297486225" class="contact-button whatsapp">
-                    <i data-lucide="message-circle"></i> WhatsApp
+                <a class="button button-primary button-whatsapp" href="https://wa.me/393297486225">
+                    <i data-lucide="message-circle"></i>
+                    WhatsApp
                 </a>
-                <a href="mailto:frankko93@gmail.com" class="contact-button email">
-                    <i data-lucide="mail"></i> Correo Electrónico
+                <a class="button button-secondary" href="mailto:frankko93@gmail.com">
+                    <i data-lucide="mail"></i>
+                    Correo electrónico
                 </a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; <span id="current-year">2023</span> Carolina & Franco. Gracias por tu tiempo.</p>
-        <p class="small-text">Hecho con <i data-lucide="heart"></i> en busca de nuestro hogar</p>
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year">2026</span> Caro y Fran</p>
+        <p>Buscando hogar en Galicia con calma, cuidado y confianza.</p>
     </footer>
 
     <script src="js/main.js"></script>
 </body>
-</html> 
+</html>
